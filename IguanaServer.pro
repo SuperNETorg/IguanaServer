@@ -5,7 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
-QMAKE_MACOSX_DEPLOYMENT_TARGET = 10.11
+QMAKE_MACOSX_DEPLOYMENT_TARGET = 10.8
 
 ICON = DEX.png.icns
 
