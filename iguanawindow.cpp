@@ -66,7 +66,12 @@ void IguanaWindow::runIguana()
     // TODO create to read system variable for windows users
     //process->start(QProcessEnvironment::systemEnvironment().value("IguanaExe") + "\\iguana");
     #ifdef __APPLE__
-    process->start("\"/Library/Application\ Support/Iguana/iguana\"");
+    //QDir::setCurrent(qgetenv("HOME")+"/Library/Application Support/Iguana/IguanaServer/");
+    //process->start(qgetenv("HOME")+"\"/Library/Application Support/Iguana/IguanaServer/iguana\"");
+    //QDesktopServices::openUrl(QUrl("file:///"+qgetenv("HOME")+"/Library/Application Support/Iguana/EasyDEX-GUI/index.html"));
+    QDir::setCurrent("/Applications/Iguana/IguanaServer/");
+    process->start("/Applications/Iguana/IguanaServer/iguana\"");
+    QDesktopServices::openUrl(QUrl("file:///Applications/iguana/EasyDEX-GUI/index.html"));
     #elif _WIN32
     QSettings settings(QSettings::IniFormat, QSettings::UserScope, "Iguana", "application");
     QString location = QFileInfo(settings.fileName()).absolutePath() + "/iguana";

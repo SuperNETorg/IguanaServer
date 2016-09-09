@@ -12,6 +12,9 @@
 #include <QMessageBox>
 #include <QSettings>
 #include <QFileInfo>
+#include <QDir>
+#include <QtWebView/QtWebView>
+#include <QCloseEvent>
 
 class QAction;
 class QMenu;
