@@ -1,6 +1,6 @@
 <RCC>
     <qresource prefix="/">
-        <file>images/iguana_icon.jpg</file>
+        <file>images/iguana_icon.png</file>
         <file>DEX.png.icns</file>
     </qresource>
 </RCC>

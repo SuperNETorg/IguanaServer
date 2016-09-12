@@ -21,7 +21,7 @@ IguanaWindow::IguanaWindow()
     createTrayIcon();
 
     // set tray icon
-    QIcon icon = QIcon(":/images/iguana_icon.jpg");
+    QIcon icon = QIcon(":/images/iguana_icon.png");
     trayIcon->setIcon(icon);
     trayIcon->show();
 
